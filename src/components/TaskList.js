@@ -72,6 +72,6 @@ export default connect(
   }),
   dispatch => ({
     onArchiveTask: id => dispatch(archiveTask(id)),
-    onPinnTask   : id => dispatch(pinTask(id)),
+    onPinTask    : id => dispatch(pinTask(id)),
   })
 )(PureTaskList);
