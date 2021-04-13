@@ -8,7 +8,9 @@
     "@testing-library/user-event": "^12.8.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-redux": "^7.2.3",
     "react-scripts": "4.0.3",
+    "redux": "^4.0.5",
     "web-vitals": "^1.1.1"
   },
   "scripts": {
@@ -17,7 +19,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "chromatic": "npx chromatic --project-token dc1e2fa371ec"
   },
   "eslintConfig": {
     "extends": [
@@ -51,8 +54,11 @@
     "@storybook/addon-actions": "^6.2.2",
     "@storybook/addon-essentials": "^6.2.2",
     "@storybook/addon-links": "^6.2.2",
+    "@storybook/addon-storyshots": "^6.2.2",
     "@storybook/node-logger": "^6.2.2",
     "@storybook/preset-create-react-app": "^3.1.7",
-    "@storybook/react": "^6.2.2"
+    "@storybook/react": "^6.2.2",
+    "chromatic": "^5.6.2",
+    "react-test-renderer": "^17.0.2"
   }
 }
