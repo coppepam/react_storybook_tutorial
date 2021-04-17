@@ -33,3 +33,13 @@ Archived.args = {
     state: 'TASK_ARCHIVED',
   },
 };
+
+const LongTitleString = "いやいやいやいやこれメチャメチャ長いタイトルだけど表示上問題ないとか思ってる？中に入る文字数考慮してないデザインはダメだよほんと。困るからね。中に入れる文字考える人も制約があるならそれをちゃんと守ってくれないとね。その前提でやってるからこっちも。";
+
+export const LongTitle = Template.bind({});
+LongTitle.args = {
+  task: {
+    ...Default.args.task,
+    title: LongTitleString,
+  },
+};
